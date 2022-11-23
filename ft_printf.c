@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 13:41:55 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/21 12:33:04 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/23 10:55:29 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,10 @@ int	ft_printf(const char *str, ...)
 	return (len);
 }
 
-int main()
+/*int main()
 {
 	int a = 590;
-	ft_printf(" %d %p ", a, 0);
-}
+	ft_printf(" %p %p ", a, 0);
+	//ft_printf("hexa: %x", LONG_MAX);
+	//ft_printf("%p\n", ft_printf("%d\n", ft_printf("%x\n", 0)));
+}*/
