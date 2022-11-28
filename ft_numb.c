@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:24:21 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/23 10:58:45 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/28 10:05:15 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,6 @@ static void	ft_puthex(unsigned long int nb, int *len)
 	}
 }
 
-// Prints memory address to the std output
 void	ft_print_memory(const void *ptr, int *len)
 {
 	unsigned long int	address;

@@ -6,11 +6,13 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 13:41:55 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/23 10:55:29 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/28 10:05:41 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <limits.h>
+#include <stdio.h>
 
 static void	ft_check_printdata(va_list arg, const char str, int *len)
 {
@@ -30,8 +32,6 @@ static void	ft_check_printdata(va_list arg, const char str, int *len)
 		ft_hexa(va_arg(arg, int), str, len);
 	else if (str == '%')
 		ft_putchar('%', len);
-	else
-		ft_putchar((char)va_arg(arg, int), len);
 }
 
 int	ft_printf(const char *str, ...)
@@ -58,8 +58,10 @@ int	ft_printf(const char *str, ...)
 
 /*int main()
 {
-	int a = 590;
-	ft_printf(" %p %p ", a, 0);
+	//int a = 590;
+	//ft_printf(" %p %p ", a, 0);
 	//ft_printf("hexa: %x", LONG_MAX);
-	//ft_printf("%p\n", ft_printf("%d\n", ft_printf("%x\n", 0)));
+	ft_printf("%u", ft_printf("%d", ft_printf("%x", 0)));
+	ft_printf("\n");
+	printf("%u", printf("%d", printf("%x", 0)));
 }*/

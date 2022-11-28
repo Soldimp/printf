@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 13:07:58 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/23 10:58:18 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/28 10:01:01 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 void	ft_putchar(char c, int *len)
 {
-	write (1, &c, 1);
-	(*len)++;
+	*len += write (1, &c, 1);
 }
 
 void	ft_putstr(const char *s, int *len)
