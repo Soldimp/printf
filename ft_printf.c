@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 13:41:55 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/29 12:55:46 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/29 19:32:48 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 static void	ft_check_printdata(va_list arg, const char str, int *len)
 {
 	if (str == 'c')
-		ft_putchar((char)va_arg(arg, int), len);
+		ft_putchar(va_arg(arg, int), len);
 	else if (str == 's')
 		ft_putstr(va_arg(arg, char *), len);
 	else if (str == 'p')
