@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 13:07:58 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/28 10:01:01 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/28 16:09:24 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_putstr(const char *s, int *len)
 	else
 	{
 		i = 0;
-		while (s[i] != '\0')
+		while (s[i])
 			ft_putchar(s[i++], len);
 	}
 }

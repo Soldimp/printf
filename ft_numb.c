@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:24:21 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/28 10:05:15 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/11/29 12:22:26 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,13 +50,13 @@ void	ft_hexa(unsigned int nbr, char cs, int *len)
 		base = "0123456789abcdef";
 	else
 		base = "0123456789ABCDEF";
-	if (nbr < 16)
-		ft_putchar(base[nbr % 16], len);
-	else
+	if (nbr >= 16)
 	{
 		ft_hexa((nbr / 16), cs, len);
 		ft_hexa((nbr % 16), cs, len);
 	}
+	else
+		ft_putchar(base[nbr % 16], len);
 }
 
 static void	ft_puthex(unsigned long int nb, int *len)
@@ -73,7 +73,7 @@ static void	ft_puthex(unsigned long int nb, int *len)
 	}
 }
 
-void	ft_print_memory(const void *ptr, int *len)
+void	ft_print_memory(unsigned long ptr, int *len)
 {
 	unsigned long int	address;
 
